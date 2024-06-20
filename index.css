@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    background-color: rgb(175, 94, 233);
+    
+}
+
+nav{
+    width: 100%;
+    /* height: 12%; */
+    background-color: rgb(95, 11, 155);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    padding: 5px;
+} 
+
+#logo{
+    color: white;
+    /* background-color: black; */
+    font-size: 23px;
+    font-style: italic;
+    font-weight: bold;
+    
+    align-self: center;
+    padding: 12px;
+    
+}
+#search-movies{
+    /* background-color: black;  */
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    align-self: center;
+    padding: 10px;
+}
+
+
+input{
+    width:100%;
+    height: 100%;
+    padding: 8px 5px;
+    font-size: 15px;
+    border-radius: 18px;
+    border: 1.5px solid blue;
+    
+
+}
+input::placeholder{
+    padding: 10px;
+   
+}
+#movies{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-top: 65px;
+    
+    
+}
+.movie{
+    width: 250px;
+    height: 450px;
+    border-radius: 5px;
+    margin: 15px;
+    flex-grow: 1;
+    /* flex-basis: 200; */
+    max-width: 250px;
+    
+
+}
+.movie img{
+    width: 100%;
+    height: 80%;
+}
+
+#movie_info {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+
+    
+}
+
+#movie_info p:last-of-type {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#navigation{
+    width: 250px;
+    height: 60px;
+    background-color: antiquewhite;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+.previous,.next{
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    border: none;
+    border: 2.5px solid blue;
+    row-gap:10px;
+}
+nav i {
+    font-size: 20px;
+    margin: 15px auto;
+    color: white;
+    align-items: center;
+    
+}
+nav i:hover {
+    color: blue;
+    
+}
+
+#content{
+    max-width:200px ;
+    padding: 11px;
+    /* height: 300px; */
+    color: black;
+    background-color: white;
+    position: absolute;
+    /* right: 0; */
+    /* left: 0; */
+    /* transform: translate(-50%,-50%); */
+    margin-top: 80px;    
+}
+.content-display{
+    display: none;
+}
+#content button {
+    text-decoration: none;
+    display: block;
+    padding: 6px;
+    font-size: 20px;
+    transition: 3ms;
+    color: black;
+    border: none;
+    background-color: transparent;
+    width:110px;
+}
+#content button:hover{
+    background-color: rgb(169, 90, 243);
+}
